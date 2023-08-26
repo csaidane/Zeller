@@ -1,0 +1,13 @@
+# firstTest.yml
+
+- LaunchApp:
+
+- AssertVisible: Jonh Smith
+- AssertVisible: Admin
+- AssertNotVisible: Jonh Doe
+- AssertNotVisible: Manager
+- TapOn: "Manager"
+- AssertNotVisible: Jonh Smith
+- AssertVisible: Jonh Doe
+- AssertNotVisible: Jonh Smith
+- AssertVisible: Manager
